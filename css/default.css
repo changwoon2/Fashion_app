@@ -1,3 +1,28 @@
 @import url("reset.css");
-/* Fontawesome 4.7 */
+@import url("common.css");
 @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+.welcome {
+  height: 100vh;
+  background: url(../img/01_Welcome.jpg) no-repeat center center/cover;
+  padding-top: 134px;
+  box-sizing: border-box;
+}
+
+.welcome h1 {
+  text-align: center;
+  color: white;
+}
+
+.welcome h1 + p {
+  margin-top: 127px;
+  margin-bottom: 119px;
+  text-align: center;
+  color: white;
+  font-size: 21px;
+  line-height: 34px;
+}
+
+.sign_links a:first-child {
+    margin-bottom: 25px;
+}
