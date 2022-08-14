@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>category - Fashion App</title>
     <link rel="stylesheet" href="css/default.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </head>
   <body>
     <header>
@@ -17,21 +28,21 @@
         class="menu_icon_right"
       />
     </header>
-    <div class="category_slider_wrap">
-      <div class="category_slide">
-        <img src="img/Slideshow 01.jpg" alt="slide1" />
-        <img src="img/Slideshow 02.jpg" alt="slide2" />
-        <img src="img/Slideshow 03.jpg" alt="slide3" />
-        <img src="img/Slideshow 04.jpg" alt="slide4" />
+    <div class="category_slider_wrap swiper">
+      <div class="category_slide swiper-wrapper">
+        <img src="img/Slideshow 01.jpg" alt="slide1" class="swiper-slide" />
+        <img src="img/Slideshow 02.jpg" alt="slide2" class="swiper-slide" />
+        <img src="img/Slideshow 03.jpg" alt="slide3" class="swiper-slide" />
+        <img src="img/Slideshow 04.jpg" alt="slide4" class="swiper-slide" />
       </div>
       <p class="pager">
-        <span>1</span>
-        <span>2</span>
+        <!-- <span>1</span>
+        <span class="active">2</span>
         <span>3</span>
-        <span>4</span>
+        <span>4</span> -->
       </p>
     </div>
-    <ul class="category_list">
+    <ul class="category_list container">
       <li>
         <img src="img/category_product_01.jpg" alt="T-shirts" />
         <h3>T-shirts</h3>
@@ -53,5 +64,23 @@
         <h4>2.5k Styles</h4>
       </li>
     </ul>
+    <aside>
+      <div class="user_profile">
+        <img src="img/navigation_bg.jpg" alt="son" />
+        <h2>Eleanor Olson</h2>
+      </div>
+      <ul class="aside_menu">
+        <li><a href="">Profile</a></li>
+        <li><a href="">Settings</a></li>
+        <li><a href="">Transactions</a></li>
+        <li><a href="">Orders</a></li>
+        <li><a href="">Notifications</a></li>
+        <li><a href="">Wallet</a></li>
+        <li><a href="">Sign Out</a></li>
+      </ul>
+      <div class="close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+    </aside>
   </body>
 </html>
